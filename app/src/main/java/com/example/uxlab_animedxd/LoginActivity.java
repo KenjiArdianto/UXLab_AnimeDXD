@@ -74,7 +74,8 @@ public class LoginActivity extends AppCompatActivity {
                 prefs.edit().putString("username", username).apply();
 
 //                buat pindah page
-                Intent intent = new Intent(LoginActivity.this, AboutUsActivity.class);
+                Intent intent = new Intent(LoginActivity.this, HostActivity.class);
+                intent.putExtra("username", username);   // lempar nama
                 startActivity(intent);
                 finish();
             }
