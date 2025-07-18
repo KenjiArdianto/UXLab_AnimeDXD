@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- tombol yang **checked** ⇒ pink soft -->
+    <item android:color="#d56b8a" android:state_checked="true"/>
+    <!-- tombol yang **unchecked** ⇒ green soft -->
+    <item android:color="#41797b"/>
+</selector>
