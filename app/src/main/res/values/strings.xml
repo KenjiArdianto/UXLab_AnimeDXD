@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">UXLab_AnimeDXD</string>
     <string name="anime_title">Anime Title</string>
+    <string name="first_label">Anime</string>
+    <string name="second_label">DXD List</string>
+    <string name="title_poster1">JUJUTSU KAISEN</string>
+    <string name="genre_poster1">Genre: Adventure, Dark Fantasy, Supernatural</string>
+    <string name="desc_poster1">A boy swallows a cursed object and becomes a vessel of a powerful demon. He joins a sorcerer school to fight curses.</string>
+    <string name="content_desc1">Poster anime Jujutsu Kaisen</string>
 </resources>
