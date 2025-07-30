@@ -2,8 +2,54 @@
     <string name="app_name">UXLab_AnimeDXD</string>
     <string name="first_label">Anime</string>
     <string name="second_label">DXD List</string>
+
     <string name="title_poster1">JUJUTSU KAISEN</string>
-    <string name="genre_poster1">Genre: Adventure, Dark Fantasy, Supernatural</string>
+    <string name="genre_poster1">Adventure, Dark Fantasy, Supernatural</string>
     <string name="desc_poster1">A boy swallows a cursed object and becomes a vessel of a powerful demon. He joins a sorcerer school to fight curses.</string>
     <string name="content_desc1">Poster anime Jujutsu Kaisen</string>
+
+    <string name="title_poster2">ATTACK ON TITAN</string>
+    <string name="genre_poster2">Action, Dark Fantasy, Post-Apocalyptic</string>
+    <string name="desc_poster2">Humanity battles giant man-eating titans in a desperate attempt to survive behind massive walls.</string>
+    <string name="content_desc2">Poster anime Attack on Titan</string>
+
+    <string name="title_poster3">OSHI NO KO</string>
+    <string name="genre_poster3">Suspense, Reincarnation</string>
+    <string name="desc_poster3">A shocking reincarnation tale about the dark side of Japan\'s entertainment industry and the quest for revenge.</string>
+    <string name="content_desc3">Poster anime Oshi no Ko</string>
+
+    <string name="title_poster4">THE SUMMER HIKARU DIED</string>
+    <string name="genre_poster4">Horror, Slice of Life, Suspense</string>
+    <string name="desc_poster4">A small-town boy senses something is off when his best friend comes back different.</string>
+    <string name="content_desc4">Poster anime The Summer Hikaru Died</string>
+
+    <string name="title_poster5">MY HERO ACADEMIA</string>
+    <string name="genre_poster5">Adventure, Fantasy, Superhero</string>
+    <string name="desc_poster5">In a world full of superpowers (quirks), a powerless boy enters the top hero school to become the Symbol of Peace.</string>
+    <string name="content_desc5">Poster anime My Hero Academia</string>
+
+    <string name="title_poster6">CHAINSAW MAN</string>
+    <string name="genre_poster6">Dark Fantasy, Horror, Suspense</string>
+    <string name="desc_poster6">Denji, a devil hunter with a chainsaw demon inside him, fights brutal devils in a world where fear manifests as monsters.</string>
+    <string name="content_desc6">Poster anime Chainsaw Man</string>
+
+    <string name="title_poster7">SPY X FAMILY</string>
+    <string name="genre_poster7">Comedy, Action</string>
+    <string name="desc_poster7">A spy must build a fake family to complete his mission—only to discover his “wife” is an assassin and “daughter” a telepath.</string>
+    <string name="content_desc7">Poster anime Spy x Family</string>
+
+    <string name="title_poster8">BLUE LOCK</string>
+    <string name="genre_poster8">Death Game, Sports (Soccer)</string>
+    <string name="desc_poster8">After Japan\'s loss in the World Cup, a radical football program aims to create the ultimate egotist striker.</string>
+    <string name="content_desc8">Poster anime Blue Lock</string>
+
+    <string name="title_poster9">TOKYO REVENGERS</string>
+    <string name="genre_poster9">Action, Science Fiction, Thriller, Yankī</string>
+    <string name="desc_poster9">A man travels back in time to high school to stop the death of his girlfriend and change the future.</string>
+    <string name="content_desc9">Poster anime Tokyo Revengers</string>
+
+    <string name="title_poster10">DEATH NOTE</string>
+    <string name="genre_poster10">Mystery, Supernatural, Thriller</string>
+    <string name="desc_poster10">A high school student gains a notebook that can kill anyone whose name is written in it—sparking a global manhunt.</string>
+    <string name="content_desc10">Poster anime Death Note</string>
 </resources>
