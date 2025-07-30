@@ -13,7 +13,23 @@
     <fragment
         android:id="@+id/nav_list"
         android:name="com.example.uxlab_animedxd.ui.list.ItemListFragment"
-        android:label="fragment_item_list"
-        tools:layout="@layout/fragment_item_list" />
+        android:label="List"
+        tools:layout="@layout/fragment_item_list">
+
+        <action
+            android:id="@+id/action_listFragment_to_detailFragment"
+            app:destination="@id/nav_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_detail"
+        android:name="com.example.uxlab_animedxd.ui.detail.DetailFragment"
+        android:label="Detail"
+        tools:layout="@layout/fragment_anime_detail" >
+
+        <argument
+            android:name="animeItem"
+            app:argType="com.example.uxlab_animedxd.model.Anime" />
+    </fragment>
 
 </navigation>

@@ -6,6 +6,7 @@ import android.os.Parcelable;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.NonNull;
 
+
 public class Anime implements Parcelable {
     private final int cover;
     private final String title;

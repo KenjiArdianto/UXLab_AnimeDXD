@@ -16,6 +16,7 @@ import androidx.core.view.MenuHost;
 import androidx.core.view.MenuProvider;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Lifecycle;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.uxlab_animedxd.R;
@@ -53,9 +54,12 @@ public class ItemListFragment extends Fragment {
         AnimeAdapter adapter = new AnimeAdapter(animeList);
         binding.animeList.setAdapter(adapter);
 
-        adapter.setOnItemClickListener(anime ->
-                Toast.makeText(getContext(), "Clicked: " + anime.getTitle(), Toast.LENGTH_SHORT).show()
-        );
+        adapter.setOnItemClickListener(anime -> {
+            Bundle bundle = new Bundle();
+            bundle.putParcelable("animeItem", anime);
+
+            Navigation.findNavController(binding.getRoot()).navigate(R.id.action_listFragment_to_detailFragment, bundle);
+        });
     }
 
     private void setupMenu() {
