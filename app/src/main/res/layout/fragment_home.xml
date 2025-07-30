@@ -8,7 +8,6 @@
     android:background="@drawable/background"
     tools:context=".ui.home.HomeFragment">
 
-    <!-- ========= HEADER ========= -->
     <LinearLayout
         android:id="@+id/headerBar"
         android:layout_width="0dp"
@@ -36,68 +35,28 @@
             android:layout_marginTop="12dp"
             app:singleSelection="true"
             app:checkedButton="@id/btnNews">
-                <!-- News Button -->
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnNews"
-                    style="@style/MyToggleBase"
-                    android:text="報 News"
-                    android:checkable="true"
-                    android:backgroundTint="@color/toggle_bg_selector"
-                    android:textColor="@android:color/white" />
 
-                <!-- Mangas Button -->
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnMangas"
-                    style="@style/MyToggleBase"
-                    android:text="表 Mangas"
-                    android:layout_marginStart="12dp"
-                    android:checkable="true"
-                    android:backgroundTint="@color/toggle_bg_selector"
-                    android:textColor="@android:color/white" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNews"
+                style="@style/MyToggleBase"
+                android:text="報 News"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMangas"
+                style="@style/MyToggleBase"
+                android:text="表 Mangas"
+                android:layout_marginStart="12dp"/>
         </com.google.android.material.button.MaterialButtonToggleGroup>
     </LinearLayout>
 
-    <!-- ========= SLIDER CONTAINER ========= -->
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/sliderContainer"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/home_view_pager"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="24dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/headerBar"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/headerBar">
+        app:layout_constraintEnd_toEndOf="parent" />
 
-        <ImageView
-            android:id="@+id/frameTop"
-            android:layout_width="350dp"
-            android:layout_height="130dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/atas_frame"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/viewPager"
-            android:layout_width="290dp"
-            android:layout_height="400dp"
-            android:layout_marginTop="136dp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:layout="@layout/item_slide"/>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <!-- ========= DOT INDICATOR ========= -->
-    <LinearLayout
-        android:id="@+id/indicatorDots"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@id/sliderContainer"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
