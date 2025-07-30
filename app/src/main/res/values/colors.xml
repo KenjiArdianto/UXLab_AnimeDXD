@@ -11,5 +11,7 @@
     <color name="gray">#D3D3D3</color>
     <color name="light_pink">#F48FB1</color>
     <color name="dark_pink">#E91E63</color>
-    <color name="muted_purpple">#8F5774</color>
+    <color name="muted_purple">#8F5774</color>
+    <color name="soft_muted_purple">#DAC4D0</color>
+    <color name="dark_purple">#790F42</color>
 </resources>
