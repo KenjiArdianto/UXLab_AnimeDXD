@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_rounded_rec"
+    android:backgroundTint="@color/soft_muted_purple">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Post a Review"
+        android:textSize="20sp"
+        android:textColor="@color/dark_purple"
+        android:fontFamily="sans-serif-black"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/review_popup_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Write your review here..."
+        android:gravity="top"
+        android:minLines="4"
+        android:background="@drawable/bg_rounded_rec"
+        android:backgroundTint="@color/white"
+        android:padding="12dp"
+        android:inputType="textMultiLine" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit_popup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:text="Submit"
+        android:fontFamily="sans-serif-black"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_rounded_rec"
+        android:backgroundTint="@color/teal_700"
+        android:paddingHorizontal="24dp"/>
+
+</LinearLayout>
