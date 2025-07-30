@@ -69,5 +69,6 @@ public class Anime implements Parcelable {
         public Anime[] newArray(int size) {
             return new Anime[size];
         }
+//       {{-- test --}
     };
 }

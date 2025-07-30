@@ -67,4 +67,5 @@ public class AnimeAdapter extends RecyclerView.Adapter<AnimeAdapter.AnimeViewHol
     public interface OnItemClickListener {
         void onItemClick(Anime anime);
     }
+//    test
 }

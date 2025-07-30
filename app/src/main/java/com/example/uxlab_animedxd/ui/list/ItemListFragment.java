@@ -82,4 +82,6 @@ public class ItemListFragment extends Fragment {
         super.onDestroyView();
         binding = null;
     }
+
+//    test
 }
