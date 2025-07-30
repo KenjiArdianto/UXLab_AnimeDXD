@@ -5,9 +5,15 @@
     app:startDestination="@id/nav_home">
 
     <fragment
-        android:id="@+id/nav_home"
+        android:id="@+id/homeFragment"
         android:name="com.example.uxlab_animedxd.ui.home.HomeFragment"
         android:label="Home"
         tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/itemListFragment"
+        android:name="com.example.uxlab_animedxd.ui.list.ItemListFragment"
+        android:label="fragment_item_list"
+        tools:layout="@layout/fragment_item_list" />
 
 </navigation>

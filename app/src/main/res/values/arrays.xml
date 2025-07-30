@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="anime_posters">
+        <item>@drawable/poster1</item>
+        <item>@drawable/poster2</item>
+        <item>@drawable/poster3</item>
+        <item>@drawable/poster4</item>
+        <item>@drawable/poster5</item>
+        <item>@drawable/poster6</item>
+        <item>@drawable/poster7</item>
+        <item>@drawable/poster8</item>
+        <item>@drawable/poster9</item>
+        <item>@drawable/poster10</item>
+    </integer-array>
+
+    <string-array name="anime_titles">
+        <item>@string/title_poster1</item>
+        <item>@string/title_poster2</item>
+        <item>@string/title_poster3</item>
+        <item>@string/title_poster4</item>
+        <item>@string/title_poster5</item>
+        <item>@string/title_poster6</item>
+        <item>@string/title_poster7</item>
+        <item>@string/title_poster8</item>
+        <item>@string/title_poster9</item>
+        <item>@string/title_poster10</item>
+    </string-array>
+
+    <string-array name="anime_genres">
+        <item>@string/genre_poster1</item>
+        <item>@string/genre_poster2</item>
+        <item>@string/genre_poster3</item>
+        <item>@string/genre_poster4</item>
+        <item>@string/genre_poster5</item>
+        <item>@string/genre_poster6</item>
+        <item>@string/genre_poster7</item>
+        <item>@string/genre_poster8</item>
+        <item>@string/genre_poster9</item>
+        <item>@string/genre_poster10</item>
+    </string-array>
+
+    <string-array name="anime_descriptions">
+        <item>@string/desc_poster1</item>
+        <item>@string/desc_poster2</item>
+        <item>@string/desc_poster3</item>
+        <item>@string/desc_poster4</item>
+        <item>@string/desc_poster5</item>
+        <item>@string/desc_poster6</item>
+        <item>@string/desc_poster7</item>
+        <item>@string/desc_poster8</item>
+        <item>@string/desc_poster9</item>
+        <item>@string/desc_poster10</item>
+    </string-array>
+</resources>
