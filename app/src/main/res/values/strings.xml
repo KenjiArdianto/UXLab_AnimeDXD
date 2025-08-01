@@ -1,56 +1,55 @@
 <resources>
     <string name="app_name">UXLab_AnimeDXD</string>
-    <string name="anime_title">Anime Title</string>
     <string name="first_label">Anime</string>
     <string name="second_label">DXD List</string>
 
     <string name="title_poster1">JUJUTSU KAISEN</string>
     <string name="genre_poster1">Adventure, Dark Fantasy, Supernatural</string>
-    <string name="desc_poster1">A boy swallows a cursed object and becomes a vessel of a powerful demon. He joins a sorcerer school to fight curses.</string>
+    <string name="desc_poster1">A boy swallows a cursed object and becomes a vessel of a powerful demon. He joins a sorcerer school to fight curses. Yuji Itadori, a high schooler with immense physical strength, has his life upended when he joins a club investigating the occult. To save his friends from a deadly curse, he swallows a cursed object, becoming the vessel for Sukuna, a powerful demon. Yuji joins a secret sorcerer school to fight curses and learn to control the power inside him, all while facing a death sentence if Sukuna ever fully takes over.</string>
     <string name="content_desc1">Poster anime Jujutsu Kaisen</string>
 
     <string name="title_poster2">ATTACK ON TITAN</string>
     <string name="genre_poster2">Action, Dark Fantasy, Post-Apocalyptic</string>
-    <string name="desc_poster2">Humanity battles giant man-eating titans in a desperate attempt to survive behind massive walls.</string>
+    <string name="desc_poster2">Humanity battles giant man-eating titans in a desperate attempt to survive behind massive walls. In a world where humanity is on the brink of extinction, forced to live behind massive walls to protect themselves from gigantic, man-eating creatures called Titans. After a Colossal Titan breaks through the outer wall, a young boy named Eren Yeager witnesses his mother\'s death. Fueled by vengeance, he joins the Scout Regiment, a military branch that fights Titans outside the walls, vowing to eradicate every single one.</string>
     <string name="content_desc2">Poster anime Attack on Titan</string>
 
     <string name="title_poster3">OSHI NO KO</string>
     <string name="genre_poster3">Suspense, Reincarnation</string>
-    <string name="desc_poster3">A shocking reincarnation tale about the dark side of Japan\'s entertainment industry and the quest for revenge.</string>
+    <string name="desc_poster3">A shocking reincarnation tale about the dark side of Japan\'s entertainment industry and the quest for revenge. A doctor is reincarnated as the son of his favorite idol, Ai Hoshino. When Ai is tragically murdered, he dedicates his new life to unraveling the conspiracy behind her death and finding her killer, exposing the harsh realities and deception of the showbiz world along the way.</string>
     <string name="content_desc3">Poster anime Oshi no Ko</string>
 
     <string name="title_poster4">THE SUMMER HIKARU DIED</string>
     <string name="genre_poster4">Horror, Slice of Life, Suspense</string>
-    <string name="desc_poster4">A small-town boy senses something is off when his best friend comes back different.</string>
+    <string name="desc_poster4">A small-town boy senses something is off when his best friend comes back different. A small town boy, Yoshiki, senses something is deeply wrong when his best friend, Hikaru, returns after disappearing in the woods. Though the person looks and acts like Hikaru, he knows it\'s not the same person. As strange occurrences begin to plague their village, Yoshiki must decide whether to accept this new, unsettling presence or confront the horrifying truth about what happened to his friend.</string>
     <string name="content_desc4">Poster anime The Summer Hikaru Died</string>
 
     <string name="title_poster5">MY HERO ACADEMIA</string>
     <string name="genre_poster5">Adventure, Fantasy, Superhero</string>
-    <string name="desc_poster5">In a world full of superpowers (quirks), a powerless boy enters the top hero school to become the Symbol of Peace.</string>
+    <string name="desc_poster5">In a world full of superpowers (quirks), a powerless boy enters the top hero school to become the Symbol of Peace. In a world where almost everyone is born with superpowers called "quirks," a boy named Izuku Midoriya is born without one. Despite this, he dreams of becoming a hero. After a chance encounter with the world\'s greatest hero, All Might, Izuku inherits his powerful quirk and enrolls in U.A. High School, the top academy for heroes. He and his classmates train to become the next generation of heroes, battling formidable villains and protecting society.</string>
     <string name="content_desc5">Poster anime My Hero Academia</string>
 
     <string name="title_poster6">CHAINSAW MAN</string>
     <string name="genre_poster6">Dark Fantasy, Horror, Suspense</string>
-    <string name="desc_poster6">Denji, a devil hunter with a chainsaw demon inside him, fights brutal devils in a world where fear manifests as monsters.</string>
+    <string name="desc_poster6">Denji, a devil hunter with a chainsaw demon inside him, fights brutal devils in a world where fear manifests as monsters. Denji, a young man burdened with his father\'s debt, works as a devil hunter with his chainsaw devil partner, Pochita. After being betrayed and killed, Pochita merges with him, turning him into a human-devil hybrid with chainsaws for limbs. He is recruited by a government organization and fights against a world full of monstrous devils, all while trying to find meaning in his new life.</string>
     <string name="content_desc6">Poster anime Chainsaw Man</string>
 
     <string name="title_poster7">SPY X FAMILY</string>
     <string name="genre_poster7">Comedy, Action</string>
-    <string name="desc_poster7">A spy must build a fake family to complete his mission—only to discover his “wife” is an assassin and “daughter” a telepath.</string>
+    <string name="desc_poster7">A spy must build a fake family to complete his mission—only to discover his “wife” is an assassin and “daughter” a telepath. Loid Forger, a super spy known as Twilight, must create a fake family to infiltrate an elite school and prevent a war. He adopts a telepathic girl, Anya, and marries an assassin, Yor. Unbeknownst to each other, all three hide their true identities while trying to be a "normal" family. Their hilarious and heartwarming misadventures lead to a series of comedic misunderstandings and high-stakes missions.</string>
     <string name="content_desc7">Poster anime Spy x Family</string>
 
     <string name="title_poster8">BLUE LOCK</string>
     <string name="genre_poster8">Death Game, Sports (Soccer)</string>
-    <string name="desc_poster8">After Japan\'s loss in the World Cup, a radical football program aims to create the ultimate egotist striker.</string>
+    <string name="desc_poster8">After Japan\'s loss in the World Cup, a radical football program aims to create the ultimate egotist striker. The Japan Football Association launches "Blue Lock," a controversial and radical training program. Three hundred of the country\'s best young strikers are isolated in a prison-like facility. There, they must compete in a series of cutthroat challenges, with only one player emerging as the ultimate egotist striker who will lead Japan to victory. The others will be permanently banned from the national team.</string>
     <string name="content_desc8">Poster anime Blue Lock</string>
 
     <string name="title_poster9">TOKYO REVENGERS</string>
     <string name="genre_poster9">Action, Science Fiction, Thriller, Yankī</string>
-    <string name="desc_poster9">A man travels back in time to high school to stop the death of his girlfriend and change the future.</string>
+    <string name="desc_poster9">A man travels back in time to high school to stop the death of his girlfriend and change the future. Takemichi Hanagaki, a down-on-his-luck young man, discovers he can time-leap 12 years into the past after a near-fatal accident. He uses this power to go back to his high school days to save his former girlfriend, Hinata Tachibana, from being murdered by the Tokyo Manji Gang. Takemichi must join the infamous gang, climb the ranks, and change key events to alter the future and save the people he cares about.</string>
     <string name="content_desc9">Poster anime Tokyo Revengers</string>
 
     <string name="title_poster10">DEATH NOTE</string>
     <string name="genre_poster10">Mystery, Supernatural, Thriller</string>
-    <string name="desc_poster10">A high school student gains a notebook that can kill anyone whose name is written in it—sparking a global manhunt.</string>
+    <string name="desc_poster10">A high school student gains a notebook that can kill anyone whose name is written in it—sparking a global manhunt. Light Yagami, a brilliant but bored high school student, finds a supernatural notebook called the "Death Note." He discovers that anyone whose name is written in it will die. He begins to use the notebook to eliminate criminals, aiming to create a new, peaceful world. This triggers a global manhunt led by a mysterious and equally brilliant detective known only as L, setting the stage for a high-stakes psychological battle of wits.</string>
     <string name="content_desc10">Poster anime Death Note</string>
 </resources>

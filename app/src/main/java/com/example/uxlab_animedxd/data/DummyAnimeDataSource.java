@@ -27,6 +27,4 @@ public class DummyAnimeDataSource {
         }
         return listAnime;
     }
-
-//    test
 }
