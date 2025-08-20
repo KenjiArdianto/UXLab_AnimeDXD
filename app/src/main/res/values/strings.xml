@@ -52,4 +52,6 @@
     <string name="genre_poster10">Mystery, Supernatural, Thriller</string>
     <string name="desc_poster10">A high school student gains a notebook that can kill anyone whose name is written in it—sparking a global manhunt. Light Yagami, a brilliant but bored high school student, finds a supernatural notebook called the "Death Note." He discovers that anyone whose name is written in it will die. He begins to use the notebook to eliminate criminals, aiming to create a new, peaceful world. This triggers a global manhunt led by a mysterious and equally brilliant detective known only as L, setting the stage for a high-stakes psychological battle of wits.</string>
     <string name="content_desc10">Poster anime Death Note</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

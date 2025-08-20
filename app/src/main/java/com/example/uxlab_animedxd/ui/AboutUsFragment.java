@@ -1,6 +1,9 @@
-package com.example.uxlab_animedxd.ui.list;
+package com.example.uxlab_animedxd.ui;
 
+import android.app.Notification;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -8,6 +11,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -15,41 +19,33 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.graphics.Insets;
 import androidx.core.view.MenuHost;
 import androidx.core.view.MenuProvider;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Lifecycle;
-import androidx.navigation.Navigation;
-import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.example.uxlab_animedxd.HostActivity;
 import com.example.uxlab_animedxd.LoginActivity;
 import com.example.uxlab_animedxd.R;
-import com.example.uxlab_animedxd.data.DummyAnimeDataSource;
+import com.example.uxlab_animedxd.databinding.FragmentAboutUsBinding;
 import com.example.uxlab_animedxd.databinding.FragmentItemListBinding;
-import com.example.uxlab_animedxd.model.Anime;
 
-import java.util.ArrayList;
+public class AboutUsFragment extends Fragment {
 
-public class ItemListFragment extends Fragment {
-
-    private FragmentItemListBinding binding;
+    private TextView welcomeText;
+    private FragmentAboutUsBinding binding;
 
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        binding = FragmentItemListBinding.inflate(inflater, container, false);
-        return binding.getRoot();
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        setupToolbar();
-        setupRecyclerView();
-        setupMenu();
-    }
 
-    private void setupToolbar() {
         ActionBar actionBar = ((AppCompatActivity) requireActivity()).getSupportActionBar();
         if (actionBar != null) {
             actionBar.show();
@@ -64,23 +60,6 @@ public class ItemListFragment extends Fragment {
             parent.setContentInsetsAbsolute(0, 0);
         }
 
-    }
-
-    private void setupRecyclerView() {
-        ArrayList<Anime> animeList = DummyAnimeDataSource.getAnimeList(requireContext());
-        binding.animeList.setLayoutManager(new LinearLayoutManager(getContext()));
-        AnimeAdapter adapter = new AnimeAdapter(animeList);
-        binding.animeList.setAdapter(adapter);
-
-        adapter.setOnItemClickListener(anime -> {
-            Bundle bundle = new Bundle();
-            bundle.putParcelable("animeItem", anime);
-
-            Navigation.findNavController(binding.getRoot()).navigate(R.id.action_listFragment_to_detailFragment, bundle);
-        });
-    }
-
-    private void setupMenu() {
         MenuHost menuHost = requireActivity();
         menuHost.addMenuProvider(new MenuProvider() {
             @Override
@@ -99,11 +78,24 @@ public class ItemListFragment extends Fragment {
                 return false;
             }
         }, getViewLifecycleOwner(), Lifecycle.State.RESUMED);
+
+        // Load username from SharedPreferences
+        SharedPreferences prefs = requireContext().getSharedPreferences("user_prefs", Context.MODE_PRIVATE);
+        String username = prefs.getString("username", "");
+
+        welcomeText = binding.welcomeText;
+        String welcomeMessage = "Welcome, " + username;
+        welcomeText.setText(welcomeMessage);
     }
 
+
+    @Nullable
     @Override
-    public void onDestroyView() {
-        super.onDestroyView();
-        binding = null;
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
+
+        binding = FragmentAboutUsBinding.inflate(inflater, container, false);
+        return binding.getRoot();
     }
 }

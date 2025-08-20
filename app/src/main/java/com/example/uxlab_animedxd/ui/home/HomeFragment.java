@@ -1,19 +1,31 @@
 package com.example.uxlab_animedxd.ui.home;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.view.MenuHost;
+import androidx.core.view.MenuProvider;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
+import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
+import com.example.uxlab_animedxd.LoginActivity;
 import com.example.uxlab_animedxd.R;
 // Hapus import yang tidak perlu, tambahkan yang baru
 import com.google.android.material.button.MaterialButtonToggleGroup;
@@ -67,6 +79,39 @@ public class HomeFragment extends Fragment {
                 }
             }
         });
+
+        ActionBar actionBar = ((AppCompatActivity) requireActivity()).getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.show();
+            actionBar.setDisplayShowTitleEnabled(false);
+            actionBar.setDisplayShowCustomEnabled(true);
+
+            View customActionBarView = LayoutInflater.from(requireContext())
+                    .inflate(R.layout.custom_actionbar, null);
+            actionBar.setCustomView(customActionBarView);
+
+            Toolbar parent = (Toolbar) customActionBarView.getParent();
+            parent.setContentInsetsAbsolute(0, 0);
+        }
+
+        MenuHost menuHost = requireActivity();
+        menuHost.addMenuProvider(new MenuProvider() {
+            @Override
+            public void onCreateMenu(@NonNull Menu menu, @NonNull MenuInflater menuInflater) {
+                menuInflater.inflate(R.menu.top_menu, menu);
+            }
+
+            @Override
+            public boolean onMenuItemSelected(@NonNull MenuItem menuItem) {
+                if (menuItem.getItemId() == R.id.action_logout) {
+                    Intent intent = new Intent(requireContext(), LoginActivity.class);
+                    startActivity(intent);
+                    requireActivity().finish();
+                    return true;
+                }
+                return false;
+            }
+        }, getViewLifecycleOwner(), Lifecycle.State.RESUMED);
     }
 
     // --- Adapter untuk ViewPager ---
