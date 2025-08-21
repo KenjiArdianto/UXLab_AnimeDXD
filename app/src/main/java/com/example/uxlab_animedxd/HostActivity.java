@@ -1,6 +1,8 @@
 package com.example.uxlab_animedxd;
 
 import android.os.Bundle;
+import android.view.View; // <-- Import View
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
@@ -27,11 +29,23 @@ public class HostActivity extends AppCompatActivity {
                     .apply();
         }
 
-        // 3. Bagian kode baru untuk setup navigasi bawah
         BottomNavigationView navView = binding.bottomNavigation;
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.nav_host_fragment);
         NavController navController = navHostFragment.getNavController();
         NavigationUI.setupWithNavController(navView, navController);
+
+        // --- TAMBAHKAN KODE DI BAWAH INI ---
+        navController.addOnDestinationChangedListener((controller, destination, arguments) -> {
+            // Cek ID dari halaman tujuan
+            if (destination.getId() == R.id.nav_detail) {
+                // Jika halaman tujuan adalah nav_detail, sembunyikan navbar
+                navView.setVisibility(View.GONE);
+            } else {
+                // Jika bukan, tampilkan kembali navbar
+                navView.setVisibility(View.VISIBLE);
+            }
+        });
+        // --- BATAS AKHIR KODE TAMBAHAN ---
     }
 }
