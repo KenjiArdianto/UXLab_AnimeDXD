@@ -141,7 +141,7 @@
                 android:fontFamily="sans-serif-black"
                 android:textColor="@color/white"
                 android:background="@drawable/bg_rounded_rec"
-                android:backgroundTint="@color/teal_700"
+                android:backgroundTint="@color/review_button_item_color"
                 android:paddingHorizontal="24dp"
                 />
         </androidx.constraintlayout.widget.ConstraintLayout>
