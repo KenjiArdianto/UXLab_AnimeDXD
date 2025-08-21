@@ -1,5 +1,6 @@
 package com.example.uxlab_animedxd.ui.list;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,7 +9,6 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -22,7 +22,6 @@ import androidx.lifecycle.Lifecycle;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
-import com.example.uxlab_animedxd.HostActivity;
 import com.example.uxlab_animedxd.LoginActivity;
 import com.example.uxlab_animedxd.R;
 import com.example.uxlab_animedxd.data.DummyAnimeDataSource;
@@ -56,7 +55,7 @@ public class ItemListFragment extends Fragment {
             actionBar.setDisplayShowTitleEnabled(false);
             actionBar.setDisplayShowCustomEnabled(true);
 
-            View customActionBarView = LayoutInflater.from(requireContext())
+            @SuppressLint("InflateParams") View customActionBarView = LayoutInflater.from(requireContext())
                     .inflate(R.layout.custom_actionbar, null);
             actionBar.setCustomView(customActionBarView);
 
