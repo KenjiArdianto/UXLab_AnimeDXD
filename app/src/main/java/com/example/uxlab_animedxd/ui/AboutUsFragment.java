@@ -84,7 +84,7 @@ public class AboutUsFragment extends Fragment {
         String username = prefs.getString("username", "");
 
         welcomeText = binding.welcomeText;
-        String welcomeMessage = "Welcome, " + username;
+        String welcomeMessage = "Welcome, " + username + "!";
         welcomeText.setText(welcomeMessage);
     }
 
